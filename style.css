@@ -65,10 +65,8 @@ body{
 }
 
 .account-creation{
-    /* height: ; */
     display: flex;
     flex-direction: column;
-    /* justify-content: ; */
     align-items: center;
 }
 button{
