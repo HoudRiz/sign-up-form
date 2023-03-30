@@ -1,7 +1,10 @@
 :root{
     --font-color:#FFFFFF;
+    --light-bg-color:#353333;
+    --main-bg-color:#231E1E;
 }
 body{
+    color: var(--font-color);
     display: flex;
     height: 100vh;
     padding: 0px;
@@ -13,9 +16,20 @@ body{
     width: 400px;
 }
 
+.quote-container{
+    height: 40vh;
+    background-color: var(--light-bg-color);
+
+}
+
+.form-container{
+    height: 60vh;
+    background-color: var(--main-bg-color);
+    
+}
+
 .footer{
     position: absolute;
-    color: var(--font-color);
     margin: 0px;
     font-size: 14px;
     text-align: center;
