@@ -25,7 +25,13 @@ body{
 .form-container{
     height: 60vh;
     background-color: var(--main-bg-color);
-    
+
+}
+.inputs{
+    height: 35vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3, 1fr);
 }
 
 .footer{
