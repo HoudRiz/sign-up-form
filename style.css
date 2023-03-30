@@ -16,8 +16,9 @@ body{
 .footer{
     position: absolute;
     color: var(--font-color);
+    margin: 0px;
     font-size: 14px;
     text-align: center;
-    bottom: 5px;
+    bottom: 0px;
 
 }
