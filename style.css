@@ -15,6 +15,7 @@ body{
 .background{
     position: relative;
     background-image: url("./images/pawel-czerwinski-NTYYL9Eb9y8-unsplash.jpg") ;
+    background-size: 100% 100%;
     width: 350px;
 }
 
@@ -79,8 +80,8 @@ button{
     font-size: 24px;
     box-sizing: border-box;
     padding: 10px 30px;
-    margin-top: 30px;
-    margin-bottom: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
     background-color: red;
     border: none;
     color: var(--font-color );
@@ -94,7 +95,7 @@ button{
 
 input{
     font-size: 24px;
-    color: var(--font-color);
+    color: var(--def-form-color);
     background-color: transparent;
     border: none;
     border-bottom:2px solid var(--def-form-color) ;
@@ -110,7 +111,7 @@ input:-webkit-autofill:active{
 }
 
 input:-webkit-autofill{
-    -webkit-text-fill-color: var(--font-color)!important;
+    -webkit-text-fill-color: var(--def-form-color)!important;
 }
 
 label{
