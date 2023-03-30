@@ -118,3 +118,15 @@ label{
     color: var(--def-form-color);
     font-size: 24px;
 }
+
+a{
+    font-style: italic;
+    font-weight: 700;
+    background-color: var(--main-bg-color);
+    text-decoration: none;
+    color: red;
+}
+
+a:hover{
+    color: orangered;
+}
