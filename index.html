@@ -22,7 +22,7 @@
             </div>
         </div>
         <div class="form-container">
-            <form action="">
+            <form action="" id="form" method="get">
                 <div class="inputs">
                     <div>
                         <label for="first-name">First name</label>
@@ -41,7 +41,7 @@
 
                     <div>
                         <label for="phone-number">Phone number</label>
-                        <input type="tel" name="phone-number" id="phone-number">
+                        <input type="tel" name="phone-number" id="phone-number" pattern="^[0-9]*$">
                     </div>
 
                     <div>
@@ -56,7 +56,7 @@
                 </div>
             </form>
             <div class="account-creation">
-                <button type="submit">Create account</button>
+                <button type="submit" form="form" value="submit">Create account</button>
                 <div>Already have an account? <a href="#">log in</a></div>
             </div>
         </div>
