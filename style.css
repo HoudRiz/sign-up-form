@@ -2,6 +2,7 @@
     --font-color:#FFFFFF;
     --light-bg-color:#353333;
     --main-bg-color:#231E1E;
+    --def-form-color:#A5A5A5;
 }
 body{
     color: var(--font-color);
@@ -48,7 +49,6 @@ body{
 
 }
 .inputs{
-    height: 35vh;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -69,11 +69,44 @@ body{
     flex-direction: column;
     align-items: center;
 }
+
 button{
+    font-size: 24px;
     box-sizing: border-box;
-    padding: 15px 50px;
-    margin: 20px;
+    padding: 10px 40px;
+    margin-top: 30px;
+    margin-bottom: 5px;
     background-color: red;
     border: none;
     color: var(--font-color );
+}
+
+.inputs>div{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 30px;
+}
+
+input{
+    font-size: 24px;
+    color: var(--font-color);
+    background-color: transparent;
+    border: none;
+    border-bottom:2px solid var(--def-form-color) ;
+}
+input:focus{
+    background-color: transparent;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px var(--main-bg-color) inset !important;
+}
+input:-webkit-autofill{
+    -webkit-text-fill-color: var(--font-color)!important;
+}
+label{
+    color: var(--def-form-color);
+    font-size: 24px;
 }
