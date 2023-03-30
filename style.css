@@ -13,18 +13,38 @@ body{
 .background{
     position: relative;
     background-image: url("./images/pawel-czerwinski-NTYYL9Eb9y8-unsplash.jpg") ;
-    width: 400px;
+    width: 350px;
 }
-
+.main-container{
+    width: 100%;
+}
 .quote-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     height: 40vh;
     background-color: var(--light-bg-color);
+}
+.quote{
+    position: relative;
+    display: flex;
+    padding: 20px;
+    font-size: 40px;
+    box-sizing: border-box;
 
+}
+.quote>span{
+    font-size: 24px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 .form-container{
     height: 60vh;
     background-color: var(--main-bg-color);
+ 
 
 }
 .inputs{
@@ -32,6 +52,7 @@ body{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(3, 1fr);
+
 }
 
 .footer{
