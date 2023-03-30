@@ -7,6 +7,7 @@
 body{
     color: var(--font-color);
     display: flex;
+    font-family:'Roboto', sans-serif;
     height: 100vh;
     padding: 0px;
     margin: 0px;
@@ -16,9 +17,11 @@ body{
     background-image: url("./images/pawel-czerwinski-NTYYL9Eb9y8-unsplash.jpg") ;
     width: 350px;
 }
+
 .main-container{
     width: 100%;
 }
+
 .quote-container{
     display: flex;
     align-items: center;
@@ -38,6 +41,8 @@ body{
 .quote>span{
     font-size: 24px;
     position: absolute;
+    font-style: italic;
+    font-weight: 100;
     right: 0;
     bottom: 0;
 }
@@ -73,7 +78,7 @@ body{
 button{
     font-size: 24px;
     box-sizing: border-box;
-    padding: 10px 40px;
+    padding: 10px 30px;
     margin-top: 30px;
     margin-bottom: 5px;
     background-color: red;
@@ -103,9 +108,11 @@ input:-webkit-autofill:focus,
 input:-webkit-autofill:active{
     -webkit-box-shadow: 0 0 0 30px var(--main-bg-color) inset !important;
 }
+
 input:-webkit-autofill{
     -webkit-text-fill-color: var(--font-color)!important;
 }
+
 label{
     color: var(--def-form-color);
     font-size: 24px;
