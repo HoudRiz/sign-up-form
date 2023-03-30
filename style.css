@@ -63,3 +63,19 @@ body{
     bottom: 0px;
 
 }
+
+.account-creation{
+    /* height: ; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: ; */
+    align-items: center;
+}
+button{
+    box-sizing: border-box;
+    padding: 15px 50px;
+    margin: 20px;
+    background-color: red;
+    border: none;
+    color: var(--font-color );
+}
