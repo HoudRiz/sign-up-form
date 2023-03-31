@@ -92,21 +92,35 @@ button:hover{
 }
 
 .inputs>div{
-    display: flex;
-    flex-direction: column;
-    margin: 10px 30px;
+    position: relative;
+    margin: 20px 20px;
+
+    
+}
+
+label{
+    color: var(--def-form-color);
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.3s ease-in-out;
+}
+input:focus+label,
+input:valid+label{
+    top: -20px;
+    pointer-events: none;
 }
 
 input{
+    outline: none;
     font-size: 24px;
     color: var(--def-form-color);
     background-color: transparent;
     border: none;
     border-bottom:2px solid var(--def-form-color) ;
 }
-input:focus{
-    background-color: transparent;
-}
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
 input:-webkit-autofill:focus, 
@@ -118,10 +132,6 @@ input:-webkit-autofill{
     -webkit-text-fill-color: var(--def-form-color)!important;
 }
 
-label{
-    color: var(--def-form-color);
-    font-size: 24px;
-}
 
 a{
     font-style: italic;
