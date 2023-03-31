@@ -106,7 +106,8 @@ label{
     transition: 0.2s ease-in-out;
 }
 input:focus+label,
-input:valid+label{
+input:valid+label,
+input:-webkit-autofill+label{
     top: -20px;
     pointer-events: none;
 }
