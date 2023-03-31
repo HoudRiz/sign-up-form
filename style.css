@@ -94,7 +94,6 @@ button:hover{
 .inputs>div{
     position: relative;
     margin: 20px 20px;
-
     
 }
 
@@ -113,6 +112,7 @@ input:valid+label{
 }
 
 input{
+    width: 90%;
     outline: none;
     font-size: 24px;
     color: var(--def-form-color);
