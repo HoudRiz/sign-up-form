@@ -171,9 +171,6 @@ input:-webkit-autofill{
 input:-webkit-autofill:valid{
     -webkit-text-fill-color: aqua !important;
 }
-input:-webkit-autofill:invalid:not(:focus){
-    -webkit-text-fill-color: red !important;
-}
 
 
 /* link decoration */
