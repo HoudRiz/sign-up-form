@@ -54,6 +54,9 @@ img{
     right: 0;
     bottom: 0;
 }
+.quote>a>span:hover{
+    text-decoration: underline;
+}
 
 .form-container{
     min-height: 60vh;
