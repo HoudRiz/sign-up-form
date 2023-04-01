@@ -63,10 +63,11 @@ body{
 
 .footer{
     position: absolute;
-    margin: 0px;
+    left: 0;
+    right: 0;
     font-size: 14px;
     text-align: center;
-    bottom: 0px;
+    bottom: 0;
 
 }
 
