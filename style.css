@@ -143,21 +143,12 @@ input:valid{
     border-bottom: 2px solid aqua;
 }
 
-input:invalid+label,
-input:invalid{
+input:invalid:not(:focus):not(:placeholder-shown)+label,
+input:invalid:not(:focus):not(:placeholder-shown){
     color: red;
 }
-input:invalid{
+input:invalid:not(:focus):not(:placeholder-shown){
     border-bottom: 2px solid red;
-}
-
-input:placeholder-shown+label,
-input:placeholder-shown{
-    color: var(--def-form-color);
-}
-
-input:placeholder-shown{
-    border-bottom:2px solid var(--def-form-color) ;
 }
 
 input{
