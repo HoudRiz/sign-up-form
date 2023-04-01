@@ -93,7 +93,7 @@ button:hover{
 
 .inputs>div{
     position: relative;
-    margin: 20px 20px;
+    margin: 30px 20px;
     
 }
 
@@ -105,13 +105,24 @@ label{
     left: 0;
     transition: 0.2s ease-in-out;
 }
-input:focus+label,
+
 input:valid+label,
+input:invalid+label,
 input:-webkit-autofill+label{
     top: -20px;
+    font-size: 18px;
     pointer-events: none;
 }
+input:placeholder-shown+label{
+    top: 0px;
+    font-size: 20px;
+}
 
+input:focus+label{
+    top: -20px;
+    font-size: 18px;
+    pointer-events: none;
+}
 input{
     width: 90%;
     outline: none;
@@ -127,6 +138,7 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus, 
 input:-webkit-autofill:active{
     -webkit-box-shadow: 0 0 0 30px var(--main-bg-color) inset !important;
+
 }
 
 input:-webkit-autofill{
