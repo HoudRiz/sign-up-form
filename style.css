@@ -3,6 +3,10 @@
     --light-bg-color:#353333;
     --main-bg-color:#231E1E;
     --def-form-color:#A5A5A5;
+    --grad-orange: #CB5544;
+    --grad-red:#CA3748;
+    --grad-dblue:#005EB2;
+    --grad-lblue:#0088C1;
 }
 body{
     color: var(--font-color);
