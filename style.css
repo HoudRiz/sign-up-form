@@ -181,6 +181,10 @@ input:-webkit-autofill:active{
 input:-webkit-autofill{
     -webkit-text-fill-color: var(--def-form-color)!important;
 }
+input:-webkit-autofill:valid{
+    -webkit-text-fill-color: aqua !important;
+}
+
 
 
 a{
