@@ -134,6 +134,32 @@ input:focus+label{
     font-size: 18px;
     pointer-events: none;
 }
+
+input:valid+label,
+input:valid{
+    color: aqua;
+}
+input:valid{
+    border-bottom: 2px solid aqua;
+}
+
+input:invalid+label,
+input:invalid{
+    color: red;
+}
+input:invalid{
+    border-bottom: 2px solid red;
+}
+
+input:placeholder-shown+label,
+input:placeholder-shown{
+    color: var(--def-form-color);
+}
+
+input:placeholder-shown{
+    border-bottom:2px solid var(--def-form-color) ;
+}
+
 input{
     width: 90%;
     outline: none;
