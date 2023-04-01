@@ -117,6 +117,7 @@ label{
     transition: 0.2s ease-in-out;
 }
 
+/* input styling: valid and invalid */
 input:valid+label,
 input:invalid:not(:placeholder-shown)+label,
 input:-webkit-autofill+label,
@@ -152,12 +153,12 @@ input{
     border-bottom:2px solid var(--def-form-color) ;
 }
 
+ /* webkit autofill styling */
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
 input:-webkit-autofill:focus, 
 input:-webkit-autofill:active{
     -webkit-box-shadow: 0 0 0 30px var(--main-bg-color) inset !important;
-
 }
 
 input:-webkit-autofill{
@@ -171,7 +172,7 @@ input:-webkit-autofill:invalid:not(:focus){
 }
 
 
-
+/* link decoration */
 a{
     font-style: italic;
     font-weight: 700;
