@@ -97,7 +97,8 @@ button{
     padding: 10px 30px;
     margin-top: 20px;
     margin-bottom: 10px;
-    background-color: red;
+    background: linear-gradient(90deg, var(--grad-red), var(--grad-orange));
+    /* background-size: 400% 400%; */
     border: none;
     color: var(--font-color );
 }
@@ -134,17 +135,36 @@ input:focus+label{
 input:valid+label,
 input:valid{
     color: aqua;
+    background-image: linear-gradient(45deg, var(--grad-lblue), var(--grad-dblue));
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
 }
 input:valid{
-    border-bottom: 2px solid aqua;
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(0.25turn, var(--grad-dblue),var(--grad-lblue));
+    border-image-slice: 1;
+
 }
 
 input:invalid:not(:focus):not(:placeholder-shown)+label,
-input:invalid:not(:focus):not(:placeholder-shown){
+input:invalid:not(:focus):not(:placeholder-shown),
+.log-in{
     color: red;
+    background-image: linear-gradient(45deg, var(--grad-red), var(--grad-orange));
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
 }
 input:invalid:not(:focus):not(:placeholder-shown){
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(0.25turn, var(--grad-red),var(--grad-orange));
+    border-image-slice: 1;
+
 }
 
 input{
