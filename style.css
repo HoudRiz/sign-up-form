@@ -75,10 +75,12 @@ img{
 
 }
 
+
 .inputs{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(3, 1fr);
+    margin-left: 10px;
 
 }
 
@@ -89,7 +91,6 @@ img{
     font-size: 14px;
     text-align: center;
     bottom: 0;
-
 }
 
 .account-creation{
