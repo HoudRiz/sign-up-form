@@ -104,14 +104,15 @@ button{
     padding: 10px 30px;
     margin-top: 20px;
     margin-bottom: 10px;
-    background: linear-gradient(90deg, var(--grad-red), var(--grad-orange));
-    /* background-size: 400% 400%; */
+    background: linear-gradient(90deg, var(--grad-red), transparent) var(--grad-orange);
+    transition: .9s ease-in-out;
     border: none;
     color: var(--font-color );
 }
 
-button:hover{
-    background-color: orangered;
+button:hover,
+button:focus{
+    background-color: var(--grad-dblue);
 }
 
 .inputs>div{
