@@ -219,3 +219,18 @@ a:hover{
     text-decoration: underline;
     text-decoration-color: var(--grad-red);
 }
+
+
+@media only screen and (max-width: 675px) {
+    body{
+        flex-direction: column;
+    }
+  }
+
+  @media only screen and (max-width: 420px) {
+    .inputs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+  }
